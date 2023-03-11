@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macareux - Commentaires</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <header class="flexbox vertical-center">
+            <a href="index.html">
+                <img id="logo" src="./img/puffin-logo.svg" alt="puffin Logo">
+            </a>
+            <h1>Macareux</h1>
+        </header>
+
+        <nav id="small-nav" class="grid vertical-center">
+            <ul class="flexbox center-evenly clean-list">
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="galerie-images.html">Galerie photo</a>
+                </li>
+                <li>
+                    <a class="active" href="commentaires.html">Commentaires</a>
+                </li>
+            </ul>
+
+            <a href="connexion.html">Se connecter</a>
+        </nav>
+
+        <main>
+            <h2>Commentaires</h2>
+
+            <form action="mailto:1734598@csfoy.ca" class="flexbox">
+                <fieldset>
+                    <div>
+                        <label for="first-name">Prénom*</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Nom de famille*</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">Courriel*</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="###-###-####"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </div>
+                    <div>
+                        <label for="province">Province</label>
+                        <select name="province" id="province">
+                            <option value="">Sélectionnez une province</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">Colombie-Britannique</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">Nouveau-Brunswick</option>
+                            <option value="NL">Terre-Neuve-et-Labrador</option>
+                            <option value="NT">Territoires du Nord-Ouest</option>
+                            <option value="NS">Nouvelle-Écosse</option>
+                            <option value="NU">Nunavut</option>
+                            <option value="ON">Ontario</option>
+                            <option value="PE">Île-du-Prince-Édouard</option>
+                            <option value="QC">Québec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YT">Yukon</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!-- ?: devons nous verifier que la date n'est pas plus grande que la currentdate ?  -->
+                        <label for="birth">Date de naissance</label>
+                        <input type="date" name="birth" id="birth">
+                    </div>
+                    <div>
+                        <label for="comment">Commentaire*</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10" required onblur="myFunction()"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="flexbox">
+                    <div>
+                        <section>
+                            <h3>Choisissez votre oiseau côtier favoris</h3>
+    
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice1"
+                                    value="Sterne pierregarin">
+                                <label for="coastal-bird-choice1">Sterne pierregarin</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice2" value="Goéland argenté">
+                                <label for="coastal-bird-choice2">Goéland argenté</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice3" value="Pluvier argenté">
+                                <label for="coastal-bird-choice3">Pluvier argenté</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice4" value="Huîtrier pie">
+                                <label for="coastal-bird-choice4">Huîtrier pie</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice5"
+                                    value="Bécasseau variable">
+                                <label for="coastal-bird-choice5">Bécasseau variable</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="coastal-bird-choice" id="coastal-bird-choice6"
+                                    value="Chevalier gambette">
+                                <label for="coastal-bird-choice6">Chevalier gambette</label>
+                            </div>
+                        </section>
+    
+                        <section>
+                            <h3>Notez votre expérience</h3>
+                            <div>
+                                <input type="radio" name="note" id="note-1" value="Excellent" checked>
+                                <label for="note-1">Excellent</label>
+                            </div>
+                            <div>
+                                <input type="radio"name="note" id="note-2" value="Très bien">
+                                <label for="note-2">Très bien</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="note" id="note-3" value="Moyen">
+                                <label for="note-3">Moyen</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="note" id="note-4" value="Bof">
+                                <label for="note-4">Bof</label>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div id="submit-button-wrapper">
+                        <button type="submit">Envoyer les commentaires</button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </main>
+
+        <footer class="grid vertical-center">
+            <a href="#logo" id="back-to-top-button">Haut de page 🡹</a>
+            <p class="copyright-cell">CopyRight 2023 ©</p>
+            <p>420-W11-SF</p>
+            <p>Travail Pratique 1</p>
+            <p>Félix Dallaire</p>
+        </footer>
+    </div>
+</body>
+
+</html>

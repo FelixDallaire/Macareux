@@ -1,0 +1,246 @@
+body {
+    font-family: Montserrat, sans-serif;
+    /* background-color: rgb(255, 255, 255); */
+    margin: 0;
+    background: url("../img/puffin-background-solo-gradient.svg") no-repeat bottom;
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+header h1 {
+    margin-inline: 1vh;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(26, 26, 26);
+}
+
+nav a:hover {
+    color: rgb(204, 200, 195);
+    filter: opacity(.5);
+}
+
+nav ul {
+    border-right: solid 0.5vh rgb(26, 26, 26);
+}
+
+main {
+    background-color: rgb(245, 245, 245);
+    color: rgb(88, 73, 55);
+    text-align: justify;
+
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+
+    padding: 3vh;
+    flex-wrap: wrap;
+    column-gap: 5vh;
+}
+
+form {
+    justify-content: center;
+}
+
+form fieldset {
+    width: 25%;
+    border: 0;
+}
+
+form fieldset:first-child div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+form fieldset:last-child {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form fieldset:first-child {
+    border-right: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+textarea,
+select {
+    padding: 1vh;
+    margin-block: 0.25vh;
+
+    box-shadow: 0 0 20px 10px rgba(25, 25, 15, 0.05);
+    border: 0;
+    border-radius: 1vh;
+
+    resize: none;
+}
+
+form label,
+form h3 {
+    font-weight: bold;
+    color: rgb(88, 73, 55);
+}
+
+button[type=submit] {
+    padding: 2vh;
+
+    background-color: rgb(177, 57, 29);
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+
+    border: none;
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+article div img {
+    float: left;
+    margin: 0 1vh;
+    border-radius: 1vh;
+}
+
+footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+
+    text-align: left;
+    font-weight: bold;
+    font-size: small;
+    color: rgb(167, 146, 120);
+
+    margin-top: 3vh;
+}
+
+#page-container {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+#long-nav {
+    background: url("../img/puffin-background-water.jpg") no-repeat center;
+    background-size: cover;
+
+    text-align: center;
+
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto 50vh;
+}
+
+#small-nav {
+    background: url("../img/puffin-background-water.jpg") no-repeat top;
+    background-size: cover;
+
+    text-align: center;
+
+    grid-template-columns: 80% 20%;
+}
+
+#back-to-top-button,
+#news-section a {
+    color: rgb(177, 57, 29);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#puffin-drawing {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+#poem-container {
+    padding: 0 3vh;
+}
+
+#poem {
+    padding: 0;
+    margin: 0;
+}
+
+#poem li {
+    margin-bottom: 30px;
+    list-style-image: url("../img/puffin-bullet.svg");
+}
+
+#poem li p {
+    line-height: 0.25vh;
+}
+
+#poem li:last-child {
+    margin-bottom: 0;
+}
+
+#gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+    font-weight: bold;
+    color: rgba(26, 26, 26, 0.5);
+}
+
+#gallery div {
+    flex: 50%;
+}
+
+#login-under-construction {
+    flex-direction: column;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(177, 57, 29);
+}
+
+#news-section {
+    width: 300px;
+    text-align: left;
+}
+
+#submit-button-wrapper {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.clean-list {
+    list-style: none;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.center-evenly {
+    justify-content: space-evenly;
+}
+
+.active {
+    color: rgb(177, 57, 29);
+}
+
+.copyright-cell {
+    grid-column-start: 2;
+    grid-column-end: 2 span;
+}
+
+.wrap-50-percent {
+    flex: 50%;
+}
